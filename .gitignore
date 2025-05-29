@@ -2,4 +2,6 @@
 .obsidian
 
 *.qm
+.etag_cache
+
 TODO.md
