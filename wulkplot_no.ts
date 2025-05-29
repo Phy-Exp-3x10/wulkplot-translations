@@ -135,7 +135,7 @@
     <message>
         <location filename="../gui.py" line="474"/>
         <source>Kill</source>
-        <translation>Drep</translation>
+        <translation>Avslutt</translation>
     </message>
     <message>
         <location filename="../gui.py" line="493"/>
