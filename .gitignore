@@ -3,5 +3,6 @@
 
 *.qm
 .etag_cache
+.venv-translations
 
 TODO.md
