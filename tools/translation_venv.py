@@ -32,7 +32,10 @@ def main():
         run_pyqt6_tools_tool(sys.argv[1:])
     else:
         print("Unexpected: qt6-tools found globally, using system environment.")
-        subprocess.run(["qt6-tools"] + sys.argv[1:], check=True)
+        if sys.argv[1] == "pylupdate6":
+            subprocess.run(sys.argv[1:], check=True)
+        else:
+            subprocess.run(["qt6-tools"] + sys.argv[1:], check=True)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

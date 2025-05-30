@@ -5,6 +5,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 TRANSLATIONS_DIR = BASE_DIR / "translations"
+VENV_RUNNER_DIR = TRANSLATIONS_DIR  / "tools" / "translation_venv.py"
 
 util_qt_files = glob.glob(str(BASE_DIR / "util_qt" / "**" / "*.py"), recursive=True)
 source_files = [str(BASE_DIR / "gui.py")] + util_qt_files
@@ -16,7 +17,7 @@ ts_files = [
     str(TRANSLATIONS_DIR / "wulkplot_ru.ts"),
 ]
 
-cmd = ["pylupdate6"] + source_files
+cmd = ["python", str(VENV_RUNNER_DIR), "pylupdate6"] + source_files
 for ts in ts_files:
     cmd += ["-ts", ts]
 
