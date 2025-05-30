@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 TRANSLATIONS_DIR = Path(__file__).resolve().parent.parent
-VENV_RUNNER_DIR = TRANSLATIONS_DIR / "tools" / "translation_venv.py"
+VENV_RUNNER_DIR = TRANSLATIONS_DIR / "tools" / "venv.py"
 
 ts_files = glob.glob(str(TRANSLATIONS_DIR / "*.ts"))
 success = []

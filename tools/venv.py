@@ -39,6 +39,6 @@ def main():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python translation_venv.py [pylupdate6|lrelease|linguist] <args>")
+        print("Usage: python venv.py [pylupdate6|lrelease|linguist] <args>")
         sys.exit(1)
     main()

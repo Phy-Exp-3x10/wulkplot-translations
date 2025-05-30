@@ -5,7 +5,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 TRANSLATIONS_DIR = BASE_DIR / "translations"
-VENV_RUNNER_DIR = TRANSLATIONS_DIR  / "tools" / "translation_venv.py"
+VENV_RUNNER_DIR = TRANSLATIONS_DIR  / "tools" / "venv.py"
 
 util_qt_files = glob.glob(str(BASE_DIR / "util_qt" / "**" / "*.py"), recursive=True)
 source_files = [str(BASE_DIR / "gui.py")] + util_qt_files
