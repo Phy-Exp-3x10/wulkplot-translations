@@ -16,7 +16,7 @@
     <message>
         <location filename="../util_qt/__generic/qt_dialogs.py" line="25"/>
         <source>Cancel</source>
-        <translation>Abrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
 </context>
 <context>
